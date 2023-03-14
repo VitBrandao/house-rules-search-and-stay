@@ -1,13 +1,21 @@
 <template>
-  <div>
+  <div class="main_div">
     <Header />
     <h1>Rule Page nº{{ $route.params.id }}</h1>
 
     <div v-if="showRule">
-      <h3>{{ rules.name }}</h3>
-      <p>{{ rules.active === 1 ? "ACTIVE" : "INACTIVE" }}</p>
-
+      <div class="rule_div">
+        <h3 class="rule_name">{{ rules.name }}</h3>
+        <p class="rule_status">
+          {{ rules.active === 1 ? "ACTIVE" : "INACTIVE" }}
+        </p>
+      </div>
+      <br />
+      <br />
       <button @click="updateRule()">UPDATE</button>
+
+      <button @click="deleteRule(rules.id)">DELETE</button>
+
       <div v-if="updating">
         <input
           type="text"
@@ -21,19 +29,20 @@
         />
         <button @click="updateDB(rules.id)">Save</button>
       </div>
-      <button @click="deleteRule(rules.id)">DELETE</button>
 
       <div v-if="showReload">
         <p>Rule sucessfully updated!</p>
-        <p>Please refresh the page or get back to House Rules page to see your updated data.</p>
+        <p>
+          Please refresh the page or get back to House Rules page to see your
+          updated data.
+        </p>
       </div>
-      
 
       <div v-if="showDelete">
-        <p >Rule sucessfully deleted!</p>
+        <p>Rule sucessfully deleted!</p>
         <p>
-          Which means that this page is no longer availabe. We recommend you to get back to House Rules
-          page.
+          Which means that this page is no longer availabe. We recommend you to
+          get back to House Rules page.
         </p>
       </div>
     </div>
@@ -142,3 +151,45 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.main_div {
+  text-align: center;
+}
+
+h1 {
+  font-family: Helvetica;
+}
+
+button {
+  padding: 5px;
+  background-color: #222;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #222;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: "Courier New", Courier, monospace;
+}
+
+button:hover {
+  color: turquoise;
+}
+
+.rule_div {
+  border: 2px gray ridge;
+  font-size: 42px;
+  display: inline-block;
+  padding: 20px;
+}
+
+.rule_name {
+  font-family: "Courier New";
+  font-size: 30px;
+}
+
+.rule_status {
+  font-size: 20px;
+}
+</style>
