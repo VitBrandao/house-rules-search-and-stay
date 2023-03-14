@@ -35,3 +35,8 @@ And the last page contains 5 buttons to test the 5 requests and check the return
 <img title="a title" alt="Alt text" src="/requests.png">
 
 ---
+
+
+And the last topic, as I said, I'm a new Vue and Nuxt user, and I didn't understand why the /nuxt folder wasn't updated to GitHub. In case you need the application ROUTES, please ask me so I can send you the routes.js file.
+
+Feel free to contact me anytime! Thank you!
