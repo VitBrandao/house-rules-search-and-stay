@@ -2,7 +2,7 @@
 
 Hello, Leandro and everyone from Search and Stay. How are you doing?
 
-Welcome to my GitHub Repository where you can find my finished 'house-rules' task. Before anything, I want to thank you for letting me participate in this hiring process. It means a lot to me.
+Welcome to my GitHub Repository! Here you can find my finished 'house-rules' task. Before anything, I want to thank you for letting me participate in this hiring process. It means a lot to me.
 
 I think it's important for you to know: this was the first time EVER that I developed an application by using Vue.Js. To be honest, I started studying Vue on last Wednesday (March, 9th) and I started learned Nuxt 2 while I was developing this application. I believe that my abilities to learn and to adapt are the greatest tools I can offer to Search and Stay.
 
