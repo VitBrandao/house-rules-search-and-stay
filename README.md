@@ -12,4 +12,26 @@ I also know that my CSS could be way more better, but to respect the 48 hours de
 
 Despite all this little matters, I'm very proud to be delivering you this project, because it was a real challenge to me to learn Nuxt and Vue so fast. But like every other technology I've studied in the past 3 years, I believe myself quite capable of getting better every day once I'm practicing daily. 
 
+Here is a project preview:
+## HOME PAGE
+The first page fetch data from the API to build the cards.
+
+<img title="a title" alt="Alt text" src="/home.png">
+
+---
+## SINGLE RULE PAGE
+By clicking in any of the cards, you'll be redirected to the page where you can UPDATE and DELETE rules.
+<img title="a title" alt="Alt text" src="/rule.png">
+
+---
+## CREATE NEW RULE
+You can also CREATE new rules (POST).
+<img title="a title" alt="Alt text" src="/create.png">
 Thanks again and please contact me anytime you need!
+
+---
+## TESTING REQUESTS
+And the last page contains 5 buttons to test the 5 requests and check the return in the console.
+<img title="a title" alt="Alt text" src="/requests.png">
+
+---
