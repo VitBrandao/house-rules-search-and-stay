@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <h1>REQUESTS</h1>
+    <h1>Requests</h1>
     <button @click="getData">GET</button>
     <button @click="create">CREATE</button>
     <button @click="getById">GET BY ID</button>
@@ -186,3 +186,20 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+    div {
+        text-align: center;
+    }
+
+    button {
+        width: 200px;
+        height: 80px;
+        font-size: 20px;
+        font-family: 'Courier New';
+    }
+
+    h3, p, h1 {
+        font-family: 'Helvetica';
+    }
+</style>
