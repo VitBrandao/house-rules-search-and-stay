@@ -1,19 +1,22 @@
 <template>
-  <div>
+  <div class="main_div">
     <Header />
     <div>
       <h1>House Rules</h1>
-      <p> You can edit and delete rules by clicking on them.</p>
-      <div v-if="rulesNotEmpty">
-        <div v-for="rule in rules" v-bind:key="rule.id">
+      <p>You can EDIT and DELETE rules by clicking on them.</p>
+
+      <div v-if="rulesNotEmpty" class="buttons_div">
+        <div v-for="rule in rules" v-bind:key="rule.id" class="internal_div">
           <button @click="redirectToRulePage(rule.id)">
-            {{ rule.name }}
-            <br/>
-            {{ rule.active === 1 ? "ACTIVE" : "INACTIVE" }}
+            <p class="rule_number"> RULE NUMBER {{ rule.id }}</p>
+            <p class='rule_name'>{{ rule.name }}</p>
+            <br />
+            <p class="rule_status">{{ rule.active === 1 ? "ACTIVE" : "INACTIVE" }}</p>
             <br />
           </button>
         </div>
       </div>
+
     </div>
   </div>
 </template>
@@ -178,3 +181,51 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.main_div {
+  text-align: center;
+}
+
+h1, p {
+  font-family: Helvetica;
+}
+
+.buttons_div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  margin: 0 auto;
+  align-items: 25px;
+  text-align: center;
+}
+
+button:hover{
+  color: turquoise;
+}
+
+.rule_name {
+  font-family: 'Courier New';
+  font-size: 25px;
+}
+
+.rule_status {
+  font-family: Impact;
+  font-size: 15px;
+}
+
+.rule_number {
+  font-family: Helvetica,
+}
+
+button {
+  background-color: #1E2F23;
+  color: white;
+  padding: 10px;
+}
+
+.internal_div{
+  padding: 10px;
+}
+</style>
