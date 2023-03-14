@@ -3,7 +3,7 @@
     <Header />
     <h1>Create New Rule</h1>
 
-    <div>
+    <div class="boxes_div">
       <label for="ruleName">
         New Rule Name:
         <input type="text" name="ruleName" v-model="name" />
@@ -22,12 +22,12 @@
       <button @click="createNewRule">Create</button>
     </div>
 
-    <h3 v-if="showCreated"> Entity created successfully! </h3>
+    <h2 v-if="showCreated">Entity created successfully!</h2>
     <br />
     <br />
-    <span v-if="showResponse"> 
-        <h3>Response printed on console:</h3>
-        {{  this.response }}
+    <span v-if="showResponse">
+      <h3>Response printed on console:</h3>
+      <p>{{ this.response }}</p>
     </span>
   </div>
 </template>
@@ -93,8 +93,8 @@ export default {
       const created = fetchData.data;
       console.log(created);
 
-      this.name = '';
-      this.status = '';
+      this.name = "";
+      this.status = "";
       this.showCreated = true;
       this.response = created;
       this.showResponse = true;
@@ -102,3 +102,46 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+h1 {
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.boxes_div {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+label {
+  padding: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+h2,
+h3,
+span,
+p {
+  text-align: center;
+  font-family: Helvetica;
+}
+
+button {
+  background-color: #222;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #222;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    color: turquoise;
+}
+</style>
