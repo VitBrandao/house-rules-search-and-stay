@@ -1,69 +1,15 @@
-# house-rules
+# House Rules
 
-## Build Setup
+Hello, Leandro and everyone from Search and Stay. How are you doing?
 
-```bash
-# install dependencies
-$ yarn install
+Welcome to my GitHub Repository where you can find my finished 'house-rules' task. Before anything, I want to thank you for letting me participate in this hiring process. It means a lot to me.
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+I think it's important for you to know: this was the first time EVER that I developed an application by using Vue.Js. To be honest, I started studying Vue on last Wednesday (March, 9th) and I started learned Nuxt 2 while I was developing this application. I believe that my abilities to learn and to adapt are the greatest tools I can offer to Search and Stay.
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+Another question, and a matter of honesty, every time I do a POST requisition to Register a new task, I got the exact expected answer (according to the task description I received on my e-mail), but the New Task itself is not added to the database. But to prove that my POST requisitions are working just fine, I printed the received response on screen every time you create a new one. You can also use the Testing Requisitions page to test the CREATE button. The GET requisition, on the other hand, was fetching a different data then the expected, but I created this menu to test requisitions so you can do it by yourselves and check console returns, so you can understand better what I mean.
 
-# generate static project
-$ yarn generate
-```
+I also know that my CSS could be way more better, but to respect the 48 hours deadline to deliver this task, I didn't get much time left to do so. Besides that, I got a 409 message error many times while developing, so if it happens to you, I reccomend to not give up on my code and refresh the page to try again.
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+Despite all this little matters, I'm very proud to be delivering you this project, because it was a real challenge to me to learn Nuxt and Vue so fast. But like every other technology I have studied in the past 3 years, I know that I will get better once I'm practicing every day. 
 
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+Thanks again and please contact me anytime you need!
